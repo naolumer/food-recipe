@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "./components/Navbar"
 import { Route,Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import FoodRecipe from './components/FoodRecipe'
+import FoodRecipe from './pages/FoodRecipe'
 
 
 const App = () => {
