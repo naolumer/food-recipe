@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-const Search = () => {
-    const [food,setFood] = useState("pizza")
+const Search = ({food,setFood}) => {
 
     const handleSubmit = (e)=>{
         e.preventDefault()
