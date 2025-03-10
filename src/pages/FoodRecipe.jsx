@@ -23,21 +23,28 @@ const FoodRecipe = () => {
   return (
     <div className='w-full mx-4 mt-8'>
 
-      <h1 className='text-3xl font-bold text-center'>Here is your recipe, Enjoy 🥣</h1>
+      <h1 className='text-3xl font-bold text-center mb-5'>Here is your recipe, Enjoy 🥣</h1>
       {
         loading ? "Loading...":
-        <div className='flex flex-col'>
-          <img src={foodDetail.image} alt="" />
-          <p>{foodDetail.title}</p>
+        <div className='flex flex-col gap-3 w-[80vw]'>
+          <img className='w-[300px] md:w-[400px] rounded-md h-auto overflow-hidden' src={foodDetail.image} alt="" />
+          <p className='text-lg font-semibold text-start mb-2'>{foodDetail.title}</p>
           <div className='flex items-center justify-around'>
-            <p>⌚ Cooking time : {foodDetail.readyInMinutes} </p>
-            <p>👪 Can serve : {foodDetail.servings} People</p>
+            <p className='text-gray-600 font-medium'>⌚ Cooking time : {foodDetail.readyInMinutes} </p>
+            <p className='text-gray-600 font-medium'>👪 Can serve : {foodDetail.servings} People</p>
           </div>
           <div className='flex items-center justify-around'>
-            <p>{foodDetail.vegetarian?"🥦 Vegetarian":"🍖 Non-vegetarian"}</p>
-            <p>{foodDetail.vegan ?"🐮 Vegan":"🍊 Animal Free"}</p>
+            <p className='text-gray-600 font-medium'>{foodDetail.vegetarian?"🥦 Vegetarian":"🍖 Non-vegetarian"}</p>
+            <p className='text-gray-600 font-medium'>{foodDetail.vegan ?"🐮 Vegan":"🍊 Animal Free"}</p>
+          </div>
+          <div className='w-full bg-gray-50 rounded-sm p-10'>
+            <div>
+              <img src="" alt="" />
+              <p></p>
+            </div>
           </div>
         </div>
+
       }
       
 
