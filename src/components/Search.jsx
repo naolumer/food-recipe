@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 
 const Search = ({food,setFood}) => {
 
@@ -6,7 +5,6 @@ const Search = ({food,setFood}) => {
         e.preventDefault()
         setFood("")
     }
-
   return (
     <div className='p-5 bg-gray-50 shadow-md border-b-2 text-center mt-10 w-[500px] mx-auto'>
         <input onChange={(e)=>setFood(e.target.value)} value={food} className='p-2 px-8 outline-none border-none rounded-md text-md font-md' type="text" placeholder='Enter food...' />
