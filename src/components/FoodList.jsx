@@ -23,9 +23,6 @@ const FoodList = ({food}) => {
         {foodList.map((item)=>(
                 <FoodItem key={item.title} item={item}/>
         ))}
-        <h1 className='text-center text-3xl font-bold font-mono p-8 m-auto'>OOPS! API NOT WORKING AT THE MOMENT ⚠️</h1>
-        
-        
     </div>
   )
 }
