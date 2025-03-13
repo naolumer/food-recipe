@@ -45,33 +45,33 @@ const FoodRecipe = () => {
       <h1 className="text-3xl font-bold text-center mb-10">Here is your recipe, Enjoy 🥣</h1>
 
       <div className="flex gap-4 items-center mt-0 w-full justify-start">
-        <div className="flex gap-3 mb-16 mt-12">
+        <div className="flex-col md:flex-row gap-3 mb-16 mt-12 items-center">
           {/* Food Details Section */}
-          <div className="flex flex-col gap-3 w-[45vw] ml-4 shadow-lg rounded-md p-8">
+          <div className="flex flex-col gap-3 w-full  md:w-[45vw] ml-4  rounded-sm p-8 items-center border-b-2">
             <h2 className="font-bold text-center mb-2 text-3xl">Food Detail</h2>
             <img
-              className="w-[350px] md:w-[480px] rounded-xl h-auto overflow-hidden mt-2"
+              className="w-[400px] md:w-[480px] rounded-xl h-auto overflow-hidden mt-2"
               src={foodDetail.image}
               alt={foodDetail.title}
             />
-            <p className="text-xl font-semibold text-start mb-2 ml-8">{foodDetail.title}</p>
+            <p className="text-xl font-semibold text-start mb-2  ">{foodDetail.title}</p>
             <div className="flex flex-col gap-2 items-start justify-between ml-8">
               <p className="text-gray-600 font-medium">⌚ Cooking time: {foodDetail.readyInMinutes} minutes</p>
               <p className="text-gray-600 font-medium">👪 Can serve: {foodDetail.servings} people</p>
             </div>
-            <div className="flex flex-col gap-2 items-start justify-between ml-8">
+            <div className="flex flex-col gap-2 items-start justify-between">
               <p className="text-gray-600 font-medium">{foodDetail.vegetarian ? '🥦 Vegetarian' : '🍖 Non-vegetarian'}</p>
               <p className="text-gray-600 font-medium">{foodDetail.vegan ? '🐮 Vegan' : '🍊 Not vegan'}</p>
             </div>
           </div>
 
           {/* Instructions Section */}
-          <div className="flex flex-col items-start ml-4 gap-3 w-[45vw] p-5">
+          <div className="flex flex-col  ml-4 gap-3 w-full mx-32 md:w-[45vw] p-5 items-center border-b-2">
             <h2 className="text-3xl font-bold">Instructions</h2>
             {foodDetail.analyzedInstructions?.[0]?.steps ? (
               <ol className="list-decimal ml-6">
                 {foodDetail.analyzedInstructions[0].steps.map((step) => (
-                  <li className="text-gray-600 mt-2" key={step.number}>
+                  <li className="text-gray-600 mt-2 text-sm " key={step.number}>
                     {step.step}
                   </li>
                 ))}

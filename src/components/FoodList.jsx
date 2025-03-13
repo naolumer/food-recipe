@@ -18,7 +18,7 @@ const FoodList = ({food}) => {
 
   return (
     
-    <div className='mx-auto flex flex-col md:flex-row gap-2 w-[90vw] mt-10 rounded-md shadow-sm shadow-gray-700 flex-wrap items-center bg-slate-50 mb-16'>
+    <div className='mx-auto flex flex-col md:flex-row gap-2 w-[90vw] mt-10   flex-wrap items-center  mb-16'>
         
         {foodList.map((item)=>(
                 <FoodItem key={item.title} item={item}/>
