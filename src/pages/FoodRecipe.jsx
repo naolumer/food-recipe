@@ -86,11 +86,11 @@ const FoodRecipe = () => {
       {/* Ingredients Section */}
       <div>
         <h2 className="text-3xl font-bold text-center mb-8">Ingredients</h2>
-        <div className="rounded-sm p-10 flex flex-wrap w-full mx-8 gap-8">
+        <div className="rounded-sm p-10 flex flex-wrap w-full mx-8 gap-5 ">
           {foodDetail.extendedIngredients?.length > 0 ? (
             foodDetail.extendedIngredients.map((item) => (
               <div
-                className="flex flex-col gap-5 items-center border-gray-200 rounded-md shadow-sm p-4 m-2"
+                className="flex flex-col gap-5 items-center border-gray-300 rounded-md shadow-md p-6 m-2 hover:scale-105 duration-500 ease-in-out"
                 key={item.id}
               >
                 <img
