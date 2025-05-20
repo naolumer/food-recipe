@@ -1,4 +1,3 @@
-
 const Search = ({food,setFood}) => {
 
     const handleSubmit = (e)=>{

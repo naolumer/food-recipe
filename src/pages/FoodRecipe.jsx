@@ -71,7 +71,7 @@ const FoodRecipe = () => {
             {foodDetail.analyzedInstructions?.[0]?.steps ? (
               <ol className="list-decimal ml-6">
                 {foodDetail.analyzedInstructions[0].steps.map((step) => (
-                  <li className="text-gray-600 mt-2 text-sm " key={step.number}>
+                  <li className="text-gray-600 mt-2 text-md " key={step.number}>
                     {step.step}
                   </li>
                 ))}
