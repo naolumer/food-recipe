@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import Search from '../components/Search'
 import FoodList from '../components/FoodList'
