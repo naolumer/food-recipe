@@ -43,7 +43,6 @@ const FoodRecipe = () => {
   return (
     <div className="w-full mx-4 mt-12">
       <h1 className="text-3xl font-bold text-center mb-10">Here is your recipe, Enjoy 🥣</h1>
-
       <div className="flex gap-4 items-center mt-0 w-full justify-start">
         <div className="flex-col md:flex-row gap-3 mb-16 mt-12 items-center">
           {/* Food Details Section */}
@@ -64,7 +63,6 @@ const FoodRecipe = () => {
               <p className="text-gray-600 font-medium">{foodDetail.vegan ? '🐮 Vegan' : '🍊 Not vegan'}</p>
             </div>
           </div>
-
           {/* Instructions Section */}
           <div className="flex flex-col  ml-4 gap-3 w-full mx-32 md:w-[45vw] p-5 items-center border-b-2">
             <h2 className="text-3xl font-bold">Instructions</h2>
@@ -82,7 +80,6 @@ const FoodRecipe = () => {
           </div>
         </div>
       </div>
-
       {/* Ingredients Section */}
       <div>
         <h2 className="text-3xl font-bold text-center mb-8">Ingredients</h2>
